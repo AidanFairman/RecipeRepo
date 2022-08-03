@@ -1,16 +1,12 @@
-plugins {
-    id 'com.android.application'
-}
-
 android {
-    compileSdk $sdkVersion
+    compileSdk sdkVersion
 
     defaultConfig {
-        applicationId $applicationId
-        minSdk $minSdkVersion
-        targetSdk $sdkVersion
-        versionCode $versionNumber
-        versionName $versionName
+        applicationId applicationId
+        minSdk minSdkVersion
+        targetSdk sdkVersion
+        versionCode versionNumber
+        versionName versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -22,8 +18,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility $javaVersion
-        targetCompatibility $javaVersion
+        sourceCompatibility javaVersion
+        targetCompatibility javaVersion
     }
     buildFeatures {
         viewBinding true
